@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fbfcf8" />
+    <title>ReFill basket</title>
+    <link rel="stylesheet" href="/ui/styles.css" />
+    <link rel="stylesheet" href="/ui/basket.css" />
+  </head>
+  <body class="basket-body">
+    <main class="sheet">
+      <header class="sheet-head">
+        <div class="mark-row">
+          <span class="mark-dot" aria-hidden="true"></span>
+          <span class="mark-name">ReFill</span>
+        </div>
+        <span class="store-chip" id="storeChip">Loading</span>
+      </header>
+
+      <section class="sheet-title">
+        <h1 id="recipeTitle">Getting your basket…</h1>
+        <p class="sheet-sub" id="recipeSub">One moment.</p>
+      </section>
+
+      <p class="notice" id="noticeBox" hidden></p>
+
+      <ol class="item-list" id="itemList"></ol>
+
+      <section class="extension-block" id="extensionBlock" hidden>
+        <h2>Fill the Blinkit cart automatically</h2>
+        <p>
+          Install the ReFill browser extension and it will search Blinkit for each
+          item and write them straight into your Blinkit cart.
+        </p>
+        <button type="button" id="autofillButton">Auto-fill Blinkit cart</button>
+        <p class="handoff-note" id="handoffNote" hidden></p>
+      </section>
+
+      <footer class="sheet-foot">
+        <p class="fine-print">
+          ReFill never places the order. You always check out inside the store app,
+          where prices, packs, and stock come from your own delivery address.
+        </p>
+      </footer>
+    </main>
+
+    <div class="action-bar">
+      <div class="progress">
+        <strong id="progressCount">0/0</strong>
+        <span>added</span>
+      </div>
+      <a class="primary-action" id="openStoreButton" href="#" target="_blank" rel="noreferrer">
+        Open store
+      </a>
+    </div>
+
+    <script src="/ui/basket.js"></script>
+  </body>
+</html>

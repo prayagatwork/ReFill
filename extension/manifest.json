@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "ReFill Blinkit Cart Bridge",
+  "version": "0.1.0",
+  "description": "Sends a ReFill ingredient basket to Blinkit and fills the web cart where matching products are found.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*",
+    "https://*.vercel.app/*",
+    "https://blinkit.com/*",
+    "https://www.blinkit.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://127.0.0.1/*",
+        "http://localhost/*",
+        "https://*.vercel.app/*"
+      ],
+      "js": ["refill-content.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://blinkit.com/*", "https://www.blinkit.com/*"],
+      "js": ["blinkit-content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "ReFill Blinkit Cart Bridge"
+  }
+}

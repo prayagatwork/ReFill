@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ReFill</title>
+    <meta
+      name="description"
+      content="Turn a recipe video into grocery links."
+    />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="workbench" aria-label="Recipe to grocery cart">
+        <div class="brand-row">
+          <a class="mark" href="./" aria-label="ReFill home">
+            <span class="mark-cut"></span>
+            <span>ReFill</span>
+          </a>
+          <div class="status-pill" id="healthStatus">Checking API</div>
+        </div>
+
+        <div class="input-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Video in. Basket out.</p>
+              <h1>Paste a recipe video.</h1>
+            </div>
+            <button class="ghost-button" type="button" id="demoButton">
+              Try demo
+            </button>
+          </div>
+
+          <form id="recipeForm">
+            <div class="mode-switch" role="tablist" aria-label="Input mode">
+              <button
+                class="mode-option active"
+                type="button"
+                data-mode="url"
+                aria-selected="true"
+              >
+                Link
+              </button>
+              <button
+                class="mode-option"
+                type="button"
+                data-mode="transcript"
+                aria-selected="false"
+              >
+                Transcript
+              </button>
+            </div>
+
+            <label class="field-label" for="sourceInput" id="sourceLabel">
+              YouTube or Shorts link
+            </label>
+            <textarea
+              id="sourceInput"
+              name="sourceInput"
+              rows="5"
+              placeholder="https://youtube.com/shorts/..."
+              required
+            ></textarea>
+
+            <div class="form-grid">
+              <label class="field">
+                <span>Store</span>
+                <select id="storeSelect">
+                  <option value="all">All stores</option>
+                  <option value="jiomart">JioMart</option>
+                  <option value="zepto">Zepto</option>
+                  <option value="instamart">Instamart</option>
+                  <option value="blinkit">Blinkit</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>API URL</span>
+                <input
+                  id="apiBaseInput"
+                  type="url"
+                  placeholder="http://127.0.0.1:8000"
+                />
+              </label>
+            </div>
+
+            <button class="primary-button" type="submit" id="submitButton">
+              Build basket
+            </button>
+          </form>
+
+          <p class="error-box" id="errorBox" hidden></p>
+        </div>
+      </section>
+
+      <section class="basket" aria-label="Generated grocery basket">
+        <div class="basket-rail" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <p class="eyebrow">Ready</p>
+          <h2>Your ingredients will land here.</h2>
+          <p>
+            ReFill keeps the checkout step honest: direct carts need official
+            store integrations, so this version gives store-ready links.
+          </p>
+        </div>
+
+        <div class="result-view" id="resultView" hidden>
+          <div class="result-header">
+            <div>
+              <p class="eyebrow">Recipe</p>
+              <h2 id="recipeName"></h2>
+            </div>
+            <div class="serving-chip" id="servingChip"></div>
+          </div>
+
+          <div class="handoff-panel">
+            <div>
+              <p class="eyebrow">Blinkit handoff</p>
+              <p>
+                Send this basket to the ReFill browser extension. It opens
+                Blinkit and fills the cart where matching products are found.
+              </p>
+            </div>
+            <button class="blinkit-button" type="button" id="blinkitCartButton">
+              Open Blinkit cart
+            </button>
+          </div>
+
+          <p class="handoff-status" id="handoffStatus" hidden></p>
+
+          <div class="ingredient-list" id="ingredientList"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

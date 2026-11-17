@@ -1,0 +1,713 @@
+{
+  "info": {
+    "_postman_id": "b7221556-d0ce-42a0-a57c-9d77cd44a9e9",
+    "name": "ReFill",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "31874911",
+    "_collection_link": "https://go.postman.co/collection/31874911-b7221556-d0ce-42a0-a57c-9d77cd44a9e9?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "https://www.jiomart.com/products",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8"
+          },
+          {
+            "key": "cache-control",
+            "value": "max-age=0"
+          },
+          {
+            "key": "priority",
+            "value": "u=0, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"macOS\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "document"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "navigate"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "sec-fetch-user",
+            "value": "?1"
+          },
+          {
+            "key": "upgrade-insecure-requests",
+            "value": "1"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "Cookie",
+            "value": "AKA_A2=A; _fbp=fb.1.1787670168016.1018928506; _gcl_au=1.1.975760831.1787670168; _ga=GA1.1.1049968472.1787670168; WZRK_G=6ba971408e284e10a7fb4641cb19b501; app_location_details=%7B%22country%22%3A%22INDIA%22%2C%22country_iso_code%22%3A%22IN%22%2C%22city%22%3A%22MUMBAI%22%2C%22pincode%22%3A%22400093%22%2C%22state%22%3A%22MAHARASHTRA%22%7D; app_geolocation=%7B%22latitude%22%3A%2219.1282743%22%2C%22longitude%22%3A%2272.8677092%22%2C%22polygon_ids%22%3A%5B%22T9G8_QC_4734199f%22%2C%22T9G8_QC_155cf391%22%2C%228972_QC_98c7eac8%22%2C%22TX34_QC_4af2a3fe%22%2C%22TM7R_QC_03c00172%22%2C%228787_QC_e9ecc29b%22%2C%228687_QC_b7d05fe5%22%2C%22TQB3_QC_7f9b3f95%22%2C%22T5RQ_QC_e61ab2fd%22%2C%228910_QC_0d6ca1e0%22%5D%7D; user_groups=l1%3A%7Cl2%3A; cra_refresh_token={{json_web_token_0ol2}}; cra_access_token={{json_web_token_16r7}}; RT=\"z=1&dm=www.jiomart.com&si=aa647cb1-16fa-41e3-8b0d-5d4e70520729&ss=mt8snr9f&sl=5&tt=9v&obo=4&rl=1\"; f.session={{supabase_service_role_api_key_0bpz}}; _ga_F1NJ1E2HJ2=GS2.1.s1787670228$o1$g0$t1787670228$j60$l0$h0; _ga_XHR9Q2M3VV=GS2.1.s1787670168$o1$g1$t1787670242$j46$l1$h1289150283; WZRK_S_884-7RK-Z77Z=%7B%22p%22%3A4%2C%22s%22%3A1787670168%2C%22t%22%3A1787670242%7D"
+          }
+        ],
+        "url": {
+          "raw": "https://www.jiomart.com/products?q=atta",
+          "protocol": "https",
+          "host": [
+            "www",
+            "jiomart",
+            "com"
+          ],
+          "path": [
+            "products"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "atta"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://www.jiomart.com/api/service/application/catalog/v1.0/products/sizes/price",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8"
+          },
+          {
+            "key": "authorization",
+            "value": "{{bearer_token_14ik}}"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "https://www.jiomart.com"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"macOS\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "visitor-id",
+            "value": "82c9f995-ac11-4afe-8769-bed8a400632e"
+          },
+          {
+            "key": "x-currency-code",
+            "value": "INR"
+          },
+          {
+            "key": "x-fp-date",
+            "value": "20260825T151239Z"
+          },
+          {
+            "key": "x-fp-sdk-version",
+            "value": "1.10.3-70"
+          },
+          {
+            "key": "x-fp-signature",
+            "value": "v1.1:dc08aab5e0f846e04b216ebefaf49bb021a21b3429c07e25c014584c1e843753"
+          },
+          {
+            "key": "x-geolocation",
+            "value": "{\"latitude\":\"19.1282743\",\"longitude\":\"72.8677092\",\"polygon_ids\":[\"T9G8_QC_4734199f\",\"T9G8_QC_155cf391\",\"8972_QC_98c7eac8\",\"TX34_QC_4af2a3fe\",\"TM7R_QC_03c00172\",\"8787_QC_e9ecc29b\",\"8687_QC_b7d05fe5\",\"TQB3_QC_7f9b3f95\",\"T5RQ_QC_e61ab2fd\",\"8910_QC_0d6ca1e0\"]}"
+          },
+          {
+            "key": "x-location-detail",
+            "value": "{\"country\":\"INDIA\",\"country_iso_code\":\"IN\",\"city\":\"MUMBAI\",\"pincode\":\"400093\",\"state\":\"MAHARASHTRA\"}"
+          },
+          {
+            "key": "Cookie",
+            "value": "AKA_A2=A; _fbp=fb.1.1787670168016.1018928506; _gcl_au=1.1.975760831.1787670168; _ga=GA1.1.1049968472.1787670168; WZRK_G=6ba971408e284e10a7fb4641cb19b501; app_location_details=%7B%22country%22%3A%22INDIA%22%2C%22country_iso_code%22%3A%22IN%22%2C%22city%22%3A%22MUMBAI%22%2C%22pincode%22%3A%22400093%22%2C%22state%22%3A%22MAHARASHTRA%22%7D; app_geolocation=%7B%22latitude%22%3A%2219.1282743%22%2C%22longitude%22%3A%2272.8677092%22%2C%22polygon_ids%22%3A%5B%22T9G8_QC_4734199f%22%2C%22T9G8_QC_155cf391%22%2C%228972_QC_98c7eac8%22%2C%22TX34_QC_4af2a3fe%22%2C%22TM7R_QC_03c00172%22%2C%228787_QC_e9ecc29b%22%2C%228687_QC_b7d05fe5%22%2C%22TQB3_QC_7f9b3f95%22%2C%22T5RQ_QC_e61ab2fd%22%2C%228910_QC_0d6ca1e0%22%5D%7D; user_groups=l1%3A%7Cl2%3A; cra_refresh_token={{json_web_token_0ol2}}; cra_access_token={{json_web_token_16r7}}; RT=\"z=1&dm=www.jiomart.com&si=aa647cb1-16fa-41e3-8b0d-5d4e70520729&ss=mt8snr9f&sl=7&tt=9v&obo=6&rl=1\"; f.session={{supabase_service_role_api_key_10f8}}; _ga_F1NJ1E2HJ2=GS2.1.s1787670228$o1$g1$t1787670607$j60$l0$h0; WZRK_S_884-7RK-Z77Z=%7B%22p%22%3A6%2C%22s%22%3A1787670168%2C%22t%22%3A1787670758%7D; _ga_XHR9Q2M3VV=GS2.1.s1787670168$o1$g1$t1787670759$j59$l1$h1289150283"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"items\":[{\"slug\":\"aashirvaad-superior-whole-wheat-mp-atta-5-kg-mr0mye-132487553\",\"size\":\"OS\",\"is_tradein_opted\":false}]}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://www.jiomart.com/api/service/application/catalog/v1.0/products/sizes/price",
+          "protocol": "https",
+          "host": [
+            "www",
+            "jiomart",
+            "com"
+          ],
+          "path": [
+            "api",
+            "service",
+            "application",
+            "catalog",
+            "v1.0",
+            "products",
+            "sizes",
+            "price"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://www.jiomart.com/api/service/application/cart/v2.0/detail",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8"
+          },
+          {
+            "key": "authorization",
+            "value": "{{bearer_token_14ik}}"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json"
+          },
+          {
+            "key": "origin",
+            "value": "https://www.jiomart.com"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"macOS\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "visitor-id",
+            "value": "82c9f995-ac11-4afe-8769-bed8a400632e"
+          },
+          {
+            "key": "x-currency-code",
+            "value": "INR"
+          },
+          {
+            "key": "x-fp-date",
+            "value": "20260825T151316Z"
+          },
+          {
+            "key": "x-fp-sdk-version",
+            "value": "1.10.3-70"
+          },
+          {
+            "key": "x-fp-signature",
+            "value": "v1.1:d931bbabb564236daae5ffac8023c05881524d96476e8bdef63378e193c174cf"
+          },
+          {
+            "key": "x-geolocation",
+            "value": "{\"latitude\":\"19.1282743\",\"longitude\":\"72.8677092\",\"polygon_ids\":[\"T9G8_QC_4734199f\",\"T9G8_QC_155cf391\",\"8972_QC_98c7eac8\",\"TX34_QC_4af2a3fe\",\"TM7R_QC_03c00172\",\"8787_QC_e9ecc29b\",\"8687_QC_b7d05fe5\",\"TQB3_QC_7f9b3f95\",\"T5RQ_QC_e61ab2fd\",\"8910_QC_0d6ca1e0\"]}"
+          },
+          {
+            "key": "x-location-detail",
+            "value": "{\"country\":\"INDIA\",\"country_iso_code\":\"IN\",\"city\":\"MUMBAI\",\"pincode\":\"400093\",\"state\":\"MAHARASHTRA\"}"
+          },
+          {
+            "key": "Cookie",
+            "value": "AKA_A2=A; _fbp=fb.1.1787670168016.1018928506; _gcl_au=1.1.975760831.1787670168; _ga=GA1.1.1049968472.1787670168; WZRK_G=6ba971408e284e10a7fb4641cb19b501; app_location_details=%7B%22country%22%3A%22INDIA%22%2C%22country_iso_code%22%3A%22IN%22%2C%22city%22%3A%22MUMBAI%22%2C%22pincode%22%3A%22400093%22%2C%22state%22%3A%22MAHARASHTRA%22%7D; app_geolocation=%7B%22latitude%22%3A%2219.1282743%22%2C%22longitude%22%3A%2272.8677092%22%2C%22polygon_ids%22%3A%5B%22T9G8_QC_4734199f%22%2C%22T9G8_QC_155cf391%22%2C%228972_QC_98c7eac8%22%2C%22TX34_QC_4af2a3fe%22%2C%22TM7R_QC_03c00172%22%2C%228787_QC_e9ecc29b%22%2C%228687_QC_b7d05fe5%22%2C%22TQB3_QC_7f9b3f95%22%2C%22T5RQ_QC_e61ab2fd%22%2C%228910_QC_0d6ca1e0%22%5D%7D; user_groups=l1%3A%7Cl2%3A; cra_refresh_token={{supabase_service_role_api_key_0ol2}}; cra_access_token={{supabase_service_role_api_key_16r7}}; RT=\"z=1&dm=www.jiomart.com&si=aa647cb1-16fa-41e3-8b0d-5d4e70520729&ss=mt8snr9f&sl=7&tt=9v&obo=6&rl=1\"; f.session={{supabase_service_role_api_key_10f8}}; _ga_F1NJ1E2HJ2=GS2.1.s1787670228$o1$g1$t1787670607$j60$l0$h0; _ga_XHR9Q2M3VV=GS2.1.s1787670168$o1$g1$t1787670760$j58$l1$h1289150283; WZRK_S_884-7RK-Z77Z=%7B%22p%22%3A6%2C%22s%22%3A1787670168%2C%22t%22%3A1787670760%7D"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"item_id\":132487553,\"item_size\":\"OS\",\"quantity\":1,\"seller_id\":1,\"meta\":{\"vertical_code\":\"GROCERIES\",\"compute_delivery_fee\":true},\"extra_meta\":{\"is_tradein_opted\":false}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://www.jiomart.com/api/service/application/cart/v2.0/detail?id=6a1ff3e3206defe7700121a5",
+          "protocol": "https",
+          "host": [
+            "www",
+            "jiomart",
+            "com"
+          ],
+          "path": [
+            "api",
+            "service",
+            "application",
+            "cart",
+            "v2.0",
+            "detail"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6a1ff3e3206defe7700121a5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://www.jiomart.com/api/service/application/cart/v1.0/basic",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8"
+          },
+          {
+            "key": "authorization",
+            "value": "{{bearer_token_14ik}}"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"macOS\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "visitor-id",
+            "value": "82c9f995-ac11-4afe-8769-bed8a400632e"
+          },
+          {
+            "key": "x-currency-code",
+            "value": "INR"
+          },
+          {
+            "key": "x-fp-date",
+            "value": "20260825T151317Z"
+          },
+          {
+            "key": "x-fp-sdk-version",
+            "value": "1.10.3-70"
+          },
+          {
+            "key": "x-fp-signature",
+            "value": "v1.1:36ae74e5b506cbd26414e37d433fb29ee1f6cbcfb2de7cf18fd3c8eb0328ce00"
+          },
+          {
+            "key": "x-geolocation",
+            "value": "{\"latitude\":\"19.1282743\",\"longitude\":\"72.8677092\",\"polygon_ids\":[\"T9G8_QC_4734199f\",\"T9G8_QC_155cf391\",\"8972_QC_98c7eac8\",\"TX34_QC_4af2a3fe\",\"TM7R_QC_03c00172\",\"8787_QC_e9ecc29b\",\"8687_QC_b7d05fe5\",\"TQB3_QC_7f9b3f95\",\"T5RQ_QC_e61ab2fd\",\"8910_QC_0d6ca1e0\"]}"
+          },
+          {
+            "key": "x-location-detail",
+            "value": "{\"country\":\"INDIA\",\"country_iso_code\":\"IN\",\"city\":\"MUMBAI\",\"pincode\":\"400093\",\"state\":\"MAHARASHTRA\"}"
+          },
+          {
+            "key": "Cookie",
+            "value": "AKA_A2=A; _fbp=fb.1.1787670168016.1018928506; _gcl_au=1.1.975760831.1787670168; _ga=GA1.1.1049968472.1787670168; WZRK_G=6ba971408e284e10a7fb4641cb19b501; app_location_details=%7B%22country%22%3A%22INDIA%22%2C%22country_iso_code%22%3A%22IN%22%2C%22city%22%3A%22MUMBAI%22%2C%22pincode%22%3A%22400093%22%2C%22state%22%3A%22MAHARASHTRA%22%7D; app_geolocation=%7B%22latitude%22%3A%2219.1282743%22%2C%22longitude%22%3A%2272.8677092%22%2C%22polygon_ids%22%3A%5B%22T9G8_QC_4734199f%22%2C%22T9G8_QC_155cf391%22%2C%228972_QC_98c7eac8%22%2C%22TX34_QC_4af2a3fe%22%2C%22TM7R_QC_03c00172%22%2C%228787_QC_e9ecc29b%22%2C%228687_QC_b7d05fe5%22%2C%22TQB3_QC_7f9b3f95%22%2C%22T5RQ_QC_e61ab2fd%22%2C%228910_QC_0d6ca1e0%22%5D%7D; user_groups=l1%3A%7Cl2%3A; cra_refresh_token={{json_web_token_0ol2}}; cra_access_token={{json_web_token_16r7}}; RT=\"z=1&dm=www.jiomart.com&si=aa647cb1-16fa-41e3-8b0d-5d4e70520729&ss=mt8snr9f&sl=7&tt=9v&obo=6&rl=1\"; f.session={{supabase_service_role_api_key_10f8}}; _ga_F1NJ1E2HJ2=GS2.1.s1787670228$o1$g1$t1787670607$j60$l0$h0; WZRK_S_884-7RK-Z77Z=%7B%22p%22%3A6%2C%22s%22%3A1787670168%2C%22t%22%3A1787670760%7D; _ga_XHR9Q2M3VV=GS2.1.s1787670168$o1$g1$t1787670797$j21$l1$h1289150283"
+          }
+        ],
+        "url": {
+          "raw": "https://www.jiomart.com/api/service/application/cart/v1.0/basic",
+          "protocol": "https",
+          "host": [
+            "www",
+            "jiomart",
+            "com"
+          ],
+          "path": [
+            "api",
+            "service",
+            "application",
+            "cart",
+            "v1.0",
+            "basic"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://www.jiomart.com/api/service/application/catalog/v1.0/follow/products",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8"
+          },
+          {
+            "key": "authorization",
+            "value": "{{bearer_token_14ik}}"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"macOS\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "visitor-id",
+            "value": "82c9f995-ac11-4afe-8769-bed8a400632e"
+          },
+          {
+            "key": "x-currency-code",
+            "value": "INR"
+          },
+          {
+            "key": "x-fp-date",
+            "value": "20260825T151438Z"
+          },
+          {
+            "key": "x-fp-sdk-version",
+            "value": "1.10.3-70"
+          },
+          {
+            "key": "x-fp-signature",
+            "value": "v1.1:ffb0535c02b2cda87f78749a52567f7ff17e247e5282a3855cae570d1a71a4a4"
+          },
+          {
+            "key": "x-geolocation",
+            "value": "{\"latitude\":\"19.1282743\",\"longitude\":\"72.8677092\",\"polygon_ids\":[\"T9G8_QC_4734199f\",\"T9G8_QC_155cf391\",\"8972_QC_98c7eac8\",\"TX34_QC_4af2a3fe\",\"TM7R_QC_03c00172\",\"8787_QC_e9ecc29b\",\"8687_QC_b7d05fe5\",\"TQB3_QC_7f9b3f95\",\"T5RQ_QC_e61ab2fd\",\"8910_QC_0d6ca1e0\"]}"
+          },
+          {
+            "key": "x-location-detail",
+            "value": "{\"country\":\"INDIA\",\"country_iso_code\":\"IN\",\"city\":\"MUMBAI\",\"pincode\":\"400093\",\"state\":\"MAHARASHTRA\"}"
+          },
+          {
+            "key": "Cookie",
+            "value": "AKA_A2=A; _fbp=fb.1.1787670168016.1018928506; _gcl_au=1.1.975760831.1787670168; _ga=GA1.1.1049968472.1787670168; WZRK_G=6ba971408e284e10a7fb4641cb19b501; app_location_details=%7B%22country%22%3A%22INDIA%22%2C%22country_iso_code%22%3A%22IN%22%2C%22city%22%3A%22MUMBAI%22%2C%22pincode%22%3A%22400093%22%2C%22state%22%3A%22MAHARASHTRA%22%7D; app_geolocation=%7B%22latitude%22%3A%2219.1282743%22%2C%22longitude%22%3A%2272.8677092%22%2C%22polygon_ids%22%3A%5B%22T9G8_QC_4734199f%22%2C%22T9G8_QC_155cf391%22%2C%228972_QC_98c7eac8%22%2C%22TX34_QC_4af2a3fe%22%2C%22TM7R_QC_03c00172%22%2C%228787_QC_e9ecc29b%22%2C%228687_QC_b7d05fe5%22%2C%22TQB3_QC_7f9b3f95%22%2C%22T5RQ_QC_e61ab2fd%22%2C%228910_QC_0d6ca1e0%22%5D%7D; user_groups=l1%3A%7Cl2%3A; cra_refresh_token={{json_web_token_0ol2}}; cra_access_token={{json_web_token_16r7}}; RT=\"z=1&dm=www.jiomart.com&si=aa647cb1-16fa-41e3-8b0d-5d4e70520729&ss=mt8snr9f&sl=8&tt=9v&obo=7&rl=1\"; f.session={{supabase_service_role_api_key_19vh}}; _ga_F1NJ1E2HJ2=GS2.1.s1787670228$o1$g1$t1787670868$j60$l0$h0; _ga_XHR9Q2M3VV=GS2.1.s1787670168$o1$g1$t1787670877$j38$l1$h1289150283; WZRK_S_884-7RK-Z77Z=%7B%22p%22%3A7%2C%22s%22%3A1787670168%2C%22t%22%3A1787670878%7D"
+          }
+        ],
+        "url": {
+          "raw": "https://www.jiomart.com/api/service/application/catalog/v1.0/follow/products",
+          "protocol": "https",
+          "host": [
+            "www",
+            "jiomart",
+            "com"
+          ],
+          "path": [
+            "api",
+            "service",
+            "application",
+            "catalog",
+            "v1.0",
+            "follow",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://www.jiomart.com/api/service/application/cart/v1.0/detail",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "accept-language",
+            "value": "en-GB,en-US;q=0.9,en;q=0.8"
+          },
+          {
+            "key": "authorization",
+            "value": "{{bearer_token_14ik}}"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"macOS\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "visitor-id",
+            "value": "82c9f995-ac11-4afe-8769-bed8a400632e"
+          },
+          {
+            "key": "x-currency-code",
+            "value": "INR"
+          },
+          {
+            "key": "x-fp-date",
+            "value": "20260825T151438Z"
+          },
+          {
+            "key": "x-fp-sdk-version",
+            "value": "1.10.3-70"
+          },
+          {
+            "key": "x-fp-signature",
+            "value": "v1.1:ec582a43b78103a0126d04e6be3cc63bda22d89dfd2da2d7ed59364c1178f91b"
+          },
+          {
+            "key": "x-geolocation",
+            "value": "{\"latitude\":\"19.1282743\",\"longitude\":\"72.8677092\",\"polygon_ids\":[\"T9G8_QC_4734199f\",\"T9G8_QC_155cf391\",\"8972_QC_98c7eac8\",\"TX34_QC_4af2a3fe\",\"TM7R_QC_03c00172\",\"8787_QC_e9ecc29b\",\"8687_QC_b7d05fe5\",\"TQB3_QC_7f9b3f95\",\"T5RQ_QC_e61ab2fd\",\"8910_QC_0d6ca1e0\"]}"
+          },
+          {
+            "key": "x-location-detail",
+            "value": "{\"country\":\"INDIA\",\"country_iso_code\":\"IN\",\"city\":\"MUMBAI\",\"pincode\":\"400093\",\"state\":\"MAHARASHTRA\"}"
+          },
+          {
+            "key": "Cookie",
+            "value": "AKA_A2=A; _fbp=fb.1.1787670168016.1018928506; _gcl_au=1.1.975760831.1787670168; _ga=GA1.1.1049968472.1787670168; WZRK_G=6ba971408e284e10a7fb4641cb19b501; app_location_details=%7B%22country%22%3A%22INDIA%22%2C%22country_iso_code%22%3A%22IN%22%2C%22city%22%3A%22MUMBAI%22%2C%22pincode%22%3A%22400093%22%2C%22state%22%3A%22MAHARASHTRA%22%7D; app_geolocation=%7B%22latitude%22%3A%2219.1282743%22%2C%22longitude%22%3A%2272.8677092%22%2C%22polygon_ids%22%3A%5B%22T9G8_QC_4734199f%22%2C%22T9G8_QC_155cf391%22%2C%228972_QC_98c7eac8%22%2C%22TX34_QC_4af2a3fe%22%2C%22TM7R_QC_03c00172%22%2C%228787_QC_e9ecc29b%22%2C%228687_QC_b7d05fe5%22%2C%22TQB3_QC_7f9b3f95%22%2C%22T5RQ_QC_e61ab2fd%22%2C%228910_QC_0d6ca1e0%22%5D%7D; user_groups=l1%3A%7Cl2%3A; cra_refresh_token={{json_web_token_0ol2}}; cra_access_token={{json_web_token_16r7}}; RT=\"z=1&dm=www.jiomart.com&si=aa647cb1-16fa-41e3-8b0d-5d4e70520729&ss=mt8snr9f&sl=8&tt=9v&obo=7&rl=1\"; f.session={{supabase_service_role_api_key_19vh}}; _ga_F1NJ1E2HJ2=GS2.1.s1787670228$o1$g1$t1787670868$j60$l0$h0; _ga_XHR9Q2M3VV=GS2.1.s1787670168$o1$g1$t1787670877$j38$l1$h1289150283; WZRK_S_884-7RK-Z77Z=%7B%22p%22%3A7%2C%22s%22%3A1787670168%2C%22t%22%3A1787670878%7D"
+          }
+        ],
+        "url": {
+          "raw": "https://www.jiomart.com/api/service/application/cart/v1.0/detail?area_code=400093&b=true&i=true",
+          "protocol": "https",
+          "host": [
+            "www",
+            "jiomart",
+            "com"
+          ],
+          "path": [
+            "api",
+            "service",
+            "application",
+            "cart",
+            "v1.0",
+            "detail"
+          ],
+          "query": [
+            {
+              "key": "area_code",
+              "value": "400093"
+            },
+            {
+              "key": "b",
+              "value": "true"
+            },
+            {
+              "key": "i",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "json_web_token_0ol2",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_16r7",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_0bpz",
+      "secret": true
+    },
+    {
+      "key": "bearer_token_14ik",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_10f8",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_0ol2",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_16r7",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_19vh",
+      "secret": true
+    }
+  ]
+}
